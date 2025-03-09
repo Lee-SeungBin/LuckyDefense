@@ -34,12 +34,8 @@ namespace UI
             {
                 return;
             }
-            
-            if (Data.Database.TowerData.TryGetValue(towerSettingData.identifier, out var towerData))
-            {
-                nameText.text = towerData.name;
-            }
 
+            nameText.text = towerSettingData.towerData.name;
             haveText.text = haveTower ? HaveTower : NotHaveTower;
         }
         

@@ -28,5 +28,17 @@ public class TowerSetting : ScriptableObject
         public Sprite projectileSprite;
         public TowerType towerType;
         public TowerGrade towerGrade;
+        public TowerData towerData;
+    }
+    
+    [System.Serializable]
+    public class TowerData
+    {
+        public string name;
+        public int attackDamage;
+        public float attackSpeed;
+        public float attackRange;
+        public int resellGold;
+        public int resellDia;
     }
 }

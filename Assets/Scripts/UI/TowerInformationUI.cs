@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Linq;
 using TMPro;
 using Units;
 using UnityEngine;
@@ -21,10 +22,12 @@ namespace UI
             {
                 return;
             }
-
-            if (Data.Database.TowerData.TryGetValue(targetTower.Identifier, out var towerData))
+            var targetTowerStatData =
+                Data.Database.TowerSetting.towerSettingDatas.FirstOrDefault(towerSettingData =>
+                    towerSettingData.identifier == targetTower.Identifier)?.towerData;
+            if (targetTowerStatData != null)
             {
-                towerNameText.text = towerData.name;
+                towerNameText.text = targetTowerStatData.name;
             }
             
             towerAttackDamageText.text = targetTower.TowerStat.attackDamage.ToString();

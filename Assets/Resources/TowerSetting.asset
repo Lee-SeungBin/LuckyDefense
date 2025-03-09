@@ -18,98 +18,238 @@ MonoBehaviour:
     projectileSprite: {fileID: 0}
     towerType: 0
     towerGrade: 0
+    towerData:
+      name: "\uC804\uC0AC"
+      attackDamage: 100
+      attackSpeed: 1
+      attackRange: 2
+      resellGold: 5
+      resellDia: 0
   - tower: {fileID: 1093786869207469491, guid: cffe5fd4ee0f11242a48ea60fd01bdd7, type: 3}
     identifier: Tower_Normal_MeleeMulti
     projectileSprite: {fileID: 0}
     towerType: 1
     towerGrade: 0
+    towerData:
+      name: "\uC57C\uB9CC\uC804\uC0AC"
+      attackDamage: 60
+      attackSpeed: 1
+      attackRange: 2
+      resellGold: 5
+      resellDia: 0
   - tower: {fileID: 7402872758680672381, guid: 4da35c6676d26d547bcfd5f0e7bf863f, type: 3}
     identifier: Tower_Normal_RangedSingle
     projectileSprite: {fileID: 21300000, guid: 042fae2dd68bce044b8fbd1f26724a2d, type: 3}
     towerType: 2
     towerGrade: 0
+    towerData:
+      name: "\uAD81\uC218"
+      attackDamage: 50
+      attackSpeed: 1
+      attackRange: 3
+      resellGold: 5
+      resellDia: 0
   - tower: {fileID: 5458627154392764528, guid: d9add322502e73b4bbac89afa8dade57, type: 3}
     identifier: Tower_Normal_RangedMulti
     projectileSprite: {fileID: 21300000, guid: 046f821c76a004e4c91b9f27ee906194, type: 3}
     towerType: 3
     towerGrade: 0
+    towerData:
+      name: "\uB9C8\uBC95\uC0AC"
+      attackDamage: 50
+      attackSpeed: 1
+      attackRange: 3
+      resellGold: 5
+      resellDia: 0
   - tower: {fileID: 4058391552339608645, guid: d3e1feb9e76283a41999086ed7a513f7, type: 3}
     identifier: Tower_Rare_MeleeSingle
     projectileSprite: {fileID: 0}
     towerType: 0
     towerGrade: 1
+    towerData:
+      name: "\uACE0\uC704\uC804\uC0AC"
+      attackDamage: 150
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 15
+      resellDia: 0
   - tower: {fileID: 2268386183608106284, guid: aaa76e1ddd35daf4ba93c2836ed8b91b, type: 3}
     identifier: Tower_Rare_MeleeMulti
     projectileSprite: {fileID: 0}
     towerType: 1
     towerGrade: 1
+    towerData:
+      name: "\uAD11\uC804\uC0AC"
+      attackDamage: 110
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 15
+      resellDia: 0
   - tower: {fileID: 1211614760504473838, guid: fdb0d51ab847c18499dd065b43a3008a, type: 3}
     identifier: Tower_Rare_RangedSingle
     projectileSprite: {fileID: 21300000, guid: 042fae2dd68bce044b8fbd1f26724a2d, type: 3}
     towerType: 2
     towerGrade: 1
+    towerData:
+      name: "\uB808\uC778\uC800"
+      attackDamage: 110
+      attackSpeed: 2
+      attackRange: 3
+      resellGold: 15
+      resellDia: 0
   - tower: {fileID: 7251663309504610883, guid: 90ec56ba00bedef4582056ae2665c35f, type: 3}
     identifier: Tower_Rare_RangedMulti
     projectileSprite: {fileID: 21300000, guid: 046f821c76a004e4c91b9f27ee906194, type: 3}
     towerType: 3
     towerGrade: 1
+    towerData:
+      name: "\uB9C8\uB3C4\uC0AC"
+      attackDamage: 90
+      attackSpeed: 2
+      attackRange: 3
+      resellGold: 15
+      resellDia: 0
   - tower: {fileID: 4850376153549899292, guid: 47388341b40fa644db82c28b4ba41177, type: 3}
     identifier: Tower_Hero_MeleeSingle
     projectileSprite: {fileID: 0}
     towerType: 0
     towerGrade: 2
+    towerData:
+      name: "\uC131\uAE30\uC0AC"
+      attackDamage: 1125
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 50
+      resellDia: 0
   - tower: {fileID: 2333279520331032337, guid: 133fc6683a7b0604d9617acf2721dcc0, type: 3}
     identifier: Tower_Hero_MeleeMulti
     projectileSprite: {fileID: 0}
     towerType: 1
     towerGrade: 2
+    towerData:
+      name: "\uD30C\uAD34\uC655"
+      attackDamage: 750
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 50
+      resellDia: 0
   - tower: {fileID: 9061633018474209102, guid: f8cf394de16d3744f9d7a8857103199d, type: 3}
     identifier: Tower_Hero_RangedSingle
     projectileSprite: {fileID: 21300000, guid: 042fae2dd68bce044b8fbd1f26724a2d, type: 3}
     towerType: 2
     towerGrade: 2
+    towerData:
+      name: "\uC0AC\uB0E5\uAFBC"
+      attackDamage: 1500
+      attackSpeed: 2
+      attackRange: 3
+      resellGold: 50
+      resellDia: 0
   - tower: {fileID: 5930598851336252262, guid: ee0945a443955d24c94c13e303b56f9d, type: 3}
     identifier: Tower_Hero_RangedMulti
     projectileSprite: {fileID: 21300000, guid: 046f821c76a004e4c91b9f27ee906194, type: 3}
     towerType: 3
     towerGrade: 2
+    towerData:
+      name: "\uB300\uB9C8\uBC95\uC0AC"
+      attackDamage: 750
+      attackSpeed: 2
+      attackRange: 3
+      resellGold: 50
+      resellDia: 0
   - tower: {fileID: 2960931299519443787, guid: 48fc96fa325627f4d9c8fe7a121627e5, type: 3}
     identifier: Tower_Legendary_MeleeSingle
     projectileSprite: {fileID: 0}
     towerType: 0
     towerGrade: 3
+    towerData:
+      name: "\uAC80\uC2E0"
+      attackDamage: 6000
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 0
+      resellDia: 2
   - tower: {fileID: 4822808019739193486, guid: e42c9a23694478a4ba68965fb41d31b0, type: 3}
     identifier: Tower_Legendary_MeleeMulti
     projectileSprite: {fileID: 0}
     towerType: 1
     towerGrade: 3
+    towerData:
+      name: "\uD63C\uB3C8\uC655"
+      attackDamage: 3000
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 0
+      resellDia: 2
   - tower: {fileID: 5635896964581624742, guid: 51295cdaf1b72aa41a23f1bd246f05a7, type: 3}
     identifier: Tower_Legendary_RangedSingle
     projectileSprite: {fileID: 21300000, guid: 587503b6015abc741ad5147fff8f4a06, type: 3}
     towerType: 2
     towerGrade: 3
+    towerData:
+      name: "\uBCF4\uC548\uAD00"
+      attackDamage: 5000
+      attackSpeed: 2
+      attackRange: 5
+      resellGold: 0
+      resellDia: 2
   - tower: {fileID: 6292880250371391484, guid: 9ec192c3ad20f6040aa1d42478657c47, type: 3}
     identifier: Tower_Legendary_RangedMulti
     projectileSprite: {fileID: 21300000, guid: 70e92df91699f664ab5bad7bf4723022, type: 3}
     towerType: 3
     towerGrade: 3
+    towerData:
+      name: "\uC6D0\uC18C\uC220\uC0AC"
+      attackDamage: 3000
+      attackSpeed: 2
+      attackRange: 5
+      resellGold: 0
+      resellDia: 2
   - tower: {fileID: 1302959539495577930, guid: 1b13593a1ccb89a4eb91531b8cc8eae8, type: 3}
     identifier: Tower_Myth_MeleeSingle
     projectileSprite: {fileID: 0}
     towerType: 0
     towerGrade: 4
+    towerData:
+      name: "\uC6A9\uAE30\uC0AC"
+      attackDamage: 10000
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 0
+      resellDia: 4
   - tower: {fileID: 8675349018596513660, guid: 3d82542b8ad61bb469b50f7cbc6d84d5, type: 3}
     identifier: Tower_Myth_MeleeMulti
     projectileSprite: {fileID: 0}
     towerType: 1
     towerGrade: 4
+    towerData:
+      name: "\uB79C\uC2AC\uB86F"
+      attackDamage: 9000
+      attackSpeed: 2
+      attackRange: 2
+      resellGold: 0
+      resellDia: 4
   - tower: {fileID: 2948146994327739731, guid: fc9fe22eea04cb940aad8ca5cc3c182f, type: 3}
     identifier: Tower_Myth_RangedSingle
     projectileSprite: {fileID: 21300000, guid: 2c523fa3ca4e1fc4b9a5713e504e6cce, type: 3}
     towerType: 2
     towerGrade: 4
+    towerData:
+      name: "\uB0E5\uBC95\uC0AC"
+      attackDamage: 13000
+      attackSpeed: 2
+      attackRange: 5
+      resellGold: 0
+      resellDia: 4
   - tower: {fileID: 5031157260229983181, guid: 8bdc3af90cb45da47a0fcc326c8d5c47, type: 3}
     identifier: Tower_Myth_RangedMulti
     projectileSprite: {fileID: 21300000, guid: 8f6d58fd471ba8a45a4b681953e29c26, type: 3}
     towerType: 3
     towerGrade: 4
+    towerData:
+      name: "\uD574\uACE8\uC220\uC0AC"
+      attackDamage: 10000
+      attackSpeed: 2
+      attackRange: 5
+      resellGold: 0
+      resellDia: 4

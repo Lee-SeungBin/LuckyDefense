@@ -48,31 +48,30 @@ namespace UI
             m_StageManager ??= GameManager.Get.GetStageManager(0);
             m_MythListButtonPool.ReturnObjects(m_ActiveMythListButtons);
             m_ActiveMythListButtons.Clear();
-            
+
             foreach (var combinationInfo in Database.MythCombinationSetting.mythCombinations)
             {
                 var mythListButton = m_MythListButtonPool.GetOrCreate();
                 mythListButton.gameObject.SetActive(true);
                 mythListButton.transform.SetParent(mythListTransform, false);
-                
+
                 var towerSettingData = Database.TowerSetting.towerSettingDatas.FirstOrDefault(tower =>
                     tower.towerGrade == Units.TowerGrade.Myth && tower.towerType == combinationInfo.mythType);
-            
+
                 if (towerSettingData == null)
                 {
                     continue;
                 }
-            
-                if (Database.TowerData.TryGetValue(towerSettingData.identifier, out var towerData))
-                {
-                    targetMythName.text = towerData.name;
-                    mythListButton.SetMythListButton(towerData.name);
-                    mythListButton.onClick.AddListener(() => SelectMythList(combinationInfo, towerData.name));
-                }
-                
+
+                targetMythName.text = towerSettingData.towerData.name;
+                mythListButton.SetMythListButton(towerSettingData.towerData.name);
+                mythListButton.onClick.AddListener(() =>
+                    SelectMythList(combinationInfo, towerSettingData.towerData.name));
+
+
                 m_ActiveMythListButtons.Add(mythListButton);
             }
-            
+
             m_ActiveMythListButtons[0].onClick.Invoke();
         }
 

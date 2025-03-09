@@ -224,24 +224,23 @@ namespace Units
                          data.towerType == TowerType && data.towerGrade == TowerGrade))
             {
                 Identifier = towerSettingData.identifier;
+                m_ProjectileSprite = towerSettingData.projectileSprite;
             }
 
-            var targetTowerSettingData =
+            var targetTowerStatData =
                 Data.Database.TowerSetting.towerSettingDatas.FirstOrDefault(towerSettingData =>
-                    towerSettingData.identifier == Identifier);
+                    towerSettingData.identifier == Identifier)?.towerData;
 
-            if (targetTowerSettingData != null &&
-                Data.Database.TowerData.TryGetValue(targetTowerSettingData.identifier, out var towerData))
+            if (targetTowerStatData != null)
             {
-                m_TowerStat.attackDamage = towerData.attackDamage;
-                m_TowerStat.attackRange = towerData.attackRange;
-                m_TowerStat.attackSpeed = towerData.attackSpeed;
-                m_TowerStat.resellGold = towerData.resellGold;
-                m_TowerStat.resellDia = towerData.resellDia;
+                m_TowerStat.attackDamage = targetTowerStatData.attackDamage;
+                m_TowerStat.attackRange = targetTowerStatData.attackRange;
+                m_TowerStat.attackSpeed = targetTowerStatData.attackSpeed;
+                m_TowerStat.resellGold = targetTowerStatData.resellGold;
+                m_TowerStat.resellDia = targetTowerStatData.resellDia;
 
-                m_ProjectileSprite = targetTowerSettingData.projectileSprite;
-                attackRange.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, towerData.attackRange * 2);
-                attackRange.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, towerData.attackRange * 2);
+                attackRange.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, targetTowerStatData.attackRange * 2);
+                attackRange.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, targetTowerStatData.attackRange * 2);
             }
 
             if (grade.Equals(TowerGrade.Hero) || grade.Equals(TowerGrade.Legendary) || grade.Equals(TowerGrade.Myth))
@@ -273,9 +272,12 @@ namespace Units
         public void UpdateTowerUnitCount(int count)
         {
             TowerUnitCount += count;
-            if (Data.Database.TowerData.TryGetValue(Identifier, out var towerData))
+            var targetTowerStatData =
+                Data.Database.TowerSetting.towerSettingDatas.FirstOrDefault(towerSettingData =>
+                    towerSettingData.identifier == Identifier)?.towerData;
+            if (targetTowerStatData != null)
             {
-                m_TowerStat.attackDamage = towerData.attackDamage * TowerUnitCount;
+                m_TowerStat.attackDamage = targetTowerStatData.attackDamage * TowerUnitCount;
             }
             
             UpdateTowerUnitCountText();
