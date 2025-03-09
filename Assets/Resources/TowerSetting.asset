@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b431bfd0ad4205808d4d0220ed02f8, type: 3}
+  m_Name: TowerSetting
+  m_EditorClassIdentifier: 
+  towerSettingDatas:
+  - tower: {fileID: 601066048353445439, guid: f4fc5ba9717c3684f93b4c34303ae55c, type: 3}
+    identifier: Tower_Normal_MeleeSingle
+    projectileSprite: {fileID: 0}
+    towerType: 0
+    towerGrade: 0
+  - tower: {fileID: 1093786869207469491, guid: cffe5fd4ee0f11242a48ea60fd01bdd7, type: 3}
+    identifier: Tower_Normal_MeleeMulti
+    projectileSprite: {fileID: 0}
+    towerType: 1
+    towerGrade: 0
+  - tower: {fileID: 7402872758680672381, guid: 4da35c6676d26d547bcfd5f0e7bf863f, type: 3}
+    identifier: Tower_Normal_RangedSingle
+    projectileSprite: {fileID: 21300000, guid: 042fae2dd68bce044b8fbd1f26724a2d, type: 3}
+    towerType: 2
+    towerGrade: 0
+  - tower: {fileID: 5458627154392764528, guid: d9add322502e73b4bbac89afa8dade57, type: 3}
+    identifier: Tower_Normal_RangedMulti
+    projectileSprite: {fileID: 21300000, guid: 046f821c76a004e4c91b9f27ee906194, type: 3}
+    towerType: 3
+    towerGrade: 0
+  - tower: {fileID: 4058391552339608645, guid: d3e1feb9e76283a41999086ed7a513f7, type: 3}
+    identifier: Tower_Rare_MeleeSingle
+    projectileSprite: {fileID: 0}
+    towerType: 0
+    towerGrade: 1
+  - tower: {fileID: 2268386183608106284, guid: aaa76e1ddd35daf4ba93c2836ed8b91b, type: 3}
+    identifier: Tower_Rare_MeleeMulti
+    projectileSprite: {fileID: 0}
+    towerType: 1
+    towerGrade: 1
+  - tower: {fileID: 1211614760504473838, guid: fdb0d51ab847c18499dd065b43a3008a, type: 3}
+    identifier: Tower_Rare_RangedSingle
+    projectileSprite: {fileID: 21300000, guid: 042fae2dd68bce044b8fbd1f26724a2d, type: 3}
+    towerType: 2
+    towerGrade: 1
+  - tower: {fileID: 7251663309504610883, guid: 90ec56ba00bedef4582056ae2665c35f, type: 3}
+    identifier: Tower_Rare_RangedMulti
+    projectileSprite: {fileID: 21300000, guid: 046f821c76a004e4c91b9f27ee906194, type: 3}
+    towerType: 3
+    towerGrade: 1
+  - tower: {fileID: 4850376153549899292, guid: 47388341b40fa644db82c28b4ba41177, type: 3}
+    identifier: Tower_Hero_MeleeSingle
+    projectileSprite: {fileID: 0}
+    towerType: 0
+    towerGrade: 2
+  - tower: {fileID: 2333279520331032337, guid: 133fc6683a7b0604d9617acf2721dcc0, type: 3}
+    identifier: Tower_Hero_MeleeMulti
+    projectileSprite: {fileID: 0}
+    towerType: 1
+    towerGrade: 2
+  - tower: {fileID: 9061633018474209102, guid: f8cf394de16d3744f9d7a8857103199d, type: 3}
+    identifier: Tower_Hero_RangedSingle
+    projectileSprite: {fileID: 21300000, guid: 042fae2dd68bce044b8fbd1f26724a2d, type: 3}
+    towerType: 2
+    towerGrade: 2
+  - tower: {fileID: 5930598851336252262, guid: ee0945a443955d24c94c13e303b56f9d, type: 3}
+    identifier: Tower_Hero_RangedMulti
+    projectileSprite: {fileID: 21300000, guid: 046f821c76a004e4c91b9f27ee906194, type: 3}
+    towerType: 3
+    towerGrade: 2
+  - tower: {fileID: 2960931299519443787, guid: 48fc96fa325627f4d9c8fe7a121627e5, type: 3}
+    identifier: Tower_Legendary_MeleeSingle
+    projectileSprite: {fileID: 0}
+    towerType: 0
+    towerGrade: 3
+  - tower: {fileID: 4822808019739193486, guid: e42c9a23694478a4ba68965fb41d31b0, type: 3}
+    identifier: Tower_Legendary_MeleeMulti
+    projectileSprite: {fileID: 0}
+    towerType: 1
+    towerGrade: 3
+  - tower: {fileID: 5635896964581624742, guid: 51295cdaf1b72aa41a23f1bd246f05a7, type: 3}
+    identifier: Tower_Legendary_RangedSingle
+    projectileSprite: {fileID: 21300000, guid: 587503b6015abc741ad5147fff8f4a06, type: 3}
+    towerType: 2
+    towerGrade: 3
+  - tower: {fileID: 6292880250371391484, guid: 9ec192c3ad20f6040aa1d42478657c47, type: 3}
+    identifier: Tower_Legendary_RangedMulti
+    projectileSprite: {fileID: 21300000, guid: 70e92df91699f664ab5bad7bf4723022, type: 3}
+    towerType: 3
+    towerGrade: 3
+  - tower: {fileID: 1302959539495577930, guid: 1b13593a1ccb89a4eb91531b8cc8eae8, type: 3}
+    identifier: Tower_Myth_MeleeSingle
+    projectileSprite: {fileID: 0}
+    towerType: 0
+    towerGrade: 4
+  - tower: {fileID: 8675349018596513660, guid: 3d82542b8ad61bb469b50f7cbc6d84d5, type: 3}
+    identifier: Tower_Myth_MeleeMulti
+    projectileSprite: {fileID: 0}
+    towerType: 1
+    towerGrade: 4
+  - tower: {fileID: 2948146994327739731, guid: fc9fe22eea04cb940aad8ca5cc3c182f, type: 3}
+    identifier: Tower_Myth_RangedSingle
+    projectileSprite: {fileID: 21300000, guid: 2c523fa3ca4e1fc4b9a5713e504e6cce, type: 3}
+    towerType: 2
+    towerGrade: 4
+  - tower: {fileID: 5031157260229983181, guid: 8bdc3af90cb45da47a0fcc326c8d5c47, type: 3}
+    identifier: Tower_Myth_RangedMulti
+    projectileSprite: {fileID: 21300000, guid: 8f6d58fd471ba8a45a4b681953e29c26, type: 3}
+    towerType: 3
+    towerGrade: 4

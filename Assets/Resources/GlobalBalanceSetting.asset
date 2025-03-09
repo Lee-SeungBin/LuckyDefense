@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37f576a84d6841a3b559261cb5546855, type: 3}
+  m_Name: GlobalBalanceSetting
+  m_EditorClassIdentifier: 
+  waveUnitMaxCount: 100
+  waveUnitSpawnCount: 20
+  waveTimer: 20
+  waveUnitSpawnInterval: 1
+  waveWaitingTime: 5
+  waveUnitKillGold: 1
+  waveUnitKillGoldMultiplier: 1.1
+  initWaveUnitHealth: 300
+  waveUnitHealthMultiplier: 1.2
+  waveUnitSpeed: 1
+  bossWaveTimer: 60
+  bossWaveStartWave: 10
+  bossUnitKillDia: 1
+  bossUnitKillDiaMultiplier: 1
+  bossUnitKillDiaDivider: 10
+  initBossUnitHealth: 10000
+  bossUnitHealthMultiplier: 1.5
+  bossUnitHealthDivider: 10
+  playerUnitMaxCount: 20
+  rareSpawnRequiredDia: 1
+  heroSpawnRequiredDia: 1
+  legendarySpawnRequiredDia: 2
+  initStartGold: 100
+  initSpawnGold: 20
+  increaseSpawnGold: 4

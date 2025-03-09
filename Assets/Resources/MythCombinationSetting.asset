@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 249b6a57b00c4fd59f6f27125196dfdc, type: 3}
+  m_Name: MythCombinationSetting
+  m_EditorClassIdentifier: 
+  mythCombinations:
+  - mythType: 2
+    materialTowerInfos:
+    - towerGrade: 1
+      towerType: 1
+    - towerGrade: 1
+      towerType: 0
+    - towerGrade: 2
+      towerType: 2
+  - mythType: 1
+    materialTowerInfos:
+    - towerGrade: 1
+      towerType: 0
+    - towerGrade: 2
+      towerType: 1
+    - towerGrade: 1
+      towerType: 3
+  - mythType: 0
+    materialTowerInfos:
+    - towerGrade: 1
+      towerType: 0
+    - towerGrade: 1
+      towerType: 2
+    - towerGrade: 1
+      towerType: 3
+  - mythType: 3
+    materialTowerInfos:
+    - towerGrade: 1
+      towerType: 2
+    - towerGrade: 2
+      towerType: 3
+    - towerGrade: 2
+      towerType: 1

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e0e061014e74aaa9fa3739dafc58212, type: 3}
+  m_Name: ProbabilitySetting
+  m_EditorClassIdentifier: 
+  rareLuckSpawn: 0.6
+  heroLuckSpawn: 0.2
+  legendaryLuckSpawn: 0.1
+  normalSpawn: 0.97
+  rareSpawn: 0.022
+  heroSpawn: 0.007
+  legendarySpawn: 0.001
